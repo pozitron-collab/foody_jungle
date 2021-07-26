@@ -1,0 +1,41 @@
+// when we want to get an unknown number of data then while loop
+is more suitable than for loop.
+
+for ex:
+if we want to get an unknown number of integers and perform addidition
+of them and we terminate the program when user enters q we get out of the loop
+
+sum <- 0
+while(true)
+{
+    var=readline(prompt="Enter a number: ") // reading the input
+    if(var=='q') // cheking for the exit condition
+    {
+        break
+    }
+    temp <- as.integer(var); // type casting charecter to integer
+    sum=sum+temp // updating the sum variable
+}
+sprintf("the sum is %d", sum)
+  
+
+  if we use for loop then we have to specify the number of input at the beginning.
+
+
+
+
+
+  data <- read.csv("data1.csv")
+
+  // plotting the US's GDP over time
+
+  plot(data[1,],data[2,],type="l",col="red",xlab="time",ylab="GDP")
+
+  // ploting the UK's GDP over time
+
+  lines(data[1,],data[3,],col="blue",type="l")
+
+  // adding legend to the plot
+
+  legend("topleft",legend=c("US","UK"),col=c("red","blue"),lty=1:2)
+  

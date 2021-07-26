@@ -1,0 +1,80 @@
+<html>
+    <title>snake game</title>
+    <head>
+       
+    </head>
+    <style>
+
+        #mycanvas
+        {
+            background-image: url('bg3.jpg');
+            border:20px solid rgb(8, 85, 40);
+            margin-left: 115px;
+            background-size: 100%;
+            /* width:100%;
+            height: 100%; */
+            
+        }
+        #header
+        {
+            /* background-color: royalblue; */
+            display: flex;
+        }
+        #name
+        {
+            border:10px solid rgb(8, 85, 40);
+            margin-left: -172px;
+            margin-right:-19px;
+            margin-top: 22px;
+            margin-bottom: 20px;
+            height: 30px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:25px;
+            font-weight:bolder;
+            padding-bottom: 2px;
+            background-color: aqua;
+            
+        }
+        body{
+            background-image: url('bg2.jpg');
+            background-size: 100%;
+        }
+        #trophy{
+            /* background-color: red;
+             */
+             /* border:10px solid rgb(8, 85, 40); */
+             background-image: url('trophy.png');
+             background-size: 100px;
+             width: 95px;;
+             height: 78px;;
+            margin-left: 192px;
+            margin-right: 306px;
+            margin-top:0px;
+            margin-bottom:20px;
+        }
+        #scoreboard
+        {
+            /* border:10px solid rgb(8, 85, 40); */
+            background-color: rgba(45, 92, 26, 0.623);
+            width: 70px;
+             height: 60px;
+             margin-left: -297px;
+            margin-right: 306px;
+            margin-top:15px;
+            margin-bottom:20px;
+        }
+        </style>
+    <body>
+        <div id="header">
+
+            <div id="trophy"></div>
+            <canvas id='scoreboard'></canvas>
+            <div id="name">$ FOODY JUNGLE $</div>
+        </div>
+        <canvas id="mycanvas">
+            <script src="javascript.js"></script>
+        </canvas>
+        
+    </body>
+</html>
